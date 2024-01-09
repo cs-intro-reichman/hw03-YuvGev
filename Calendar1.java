@@ -30,7 +30,7 @@ public class Calendar1 {
 					sundaysCount++;
 				}
 			}
-			System.out.prinntln(""); 		
+			System.out.println(""); 		
 	 		advance();
 	 		debugDaysCounter++;
 	 		//// If you want to stop the loop after n days, replace the condition of the

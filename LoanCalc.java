@@ -46,7 +46,7 @@ public class LoanCalc {
 		while (f >= epsilon && f >= 0){
 			g += increment;
 			f = endBalance(loan, rate, n, g);
-			iterationCounter1 ++;
+			iterationCounter ++;
 		}
 
     	return g;
@@ -73,7 +73,7 @@ public class LoanCalc {
 				h = g;
 			}
 			g = (l + h) / 2;
-			iterationCounter2 ++;
+			iterationCounter ++;
 		}
 
     	return g;
