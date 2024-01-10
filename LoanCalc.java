@@ -48,7 +48,6 @@ public class LoanCalc {
 			f = endBalance(loan, rate, n, g);
 			iterationCounter ++;
 		}
-
     	return g;
     }
     
@@ -67,7 +66,7 @@ public class LoanCalc {
 		double g = (l + h) / 2;
 		double f = endBalance(loan, rate, n, g);
 		while((h - l) > epsilon){
-			if (endBalance(loan, rate, n, g)*endBalance(loan, rate, n, l)>0){
+			if (endBalance(loan, rate, n, g)*endBalance(loan, rate, n, l) > 0){
 				l = g;
 			} else {
 				h = g;
@@ -75,7 +74,6 @@ public class LoanCalc {
 			g = (l + h) / 2;
 			iterationCounter ++;
 		}
-
     	return g;
     }
 	
@@ -85,9 +83,8 @@ public class LoanCalc {
 	*/
 	private static double endBalance(double loan, double rate, int n, double payment) {
 		// Replace the following statement with your code
-		
 		for (int i = 1; i <= n; i++){
-			loan  = (loan - payment)*(1 +rate/100);
+			loan = (loan - payment) * (1 + rate / 100);
 		}
     	return loan;
 	}

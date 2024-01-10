@@ -14,7 +14,7 @@ public class LowerCase {
         String answer = "";
         for(int i = 0; i < s.length(); i++){
             char chr = s.charAt(i);
-            if ( chr >= 'A' && chr <= 'Z' ){
+            if ( chr >= 'A' && chr <= 'Z'){
                 char chrLow = ((char)(chr + 32));
                 chr = chrLow;
                 answer += chr;
